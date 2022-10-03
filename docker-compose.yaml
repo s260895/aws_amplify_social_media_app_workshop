@@ -1,0 +1,11 @@
+version: '3'
+services:
+  aws_amplify_dev_environment:
+    image: ubuntu:latest
+    ports:
+     - 3000:3000
+    volumes:
+     - ubuntu-data:/home
+volumes:
+  ubuntu-data:
+    driver: local
